@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W6T-fo-Sik">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="272-Js-fLe">
+            <objects>
+                <navigationController id="W6T-fo-Sik" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TIe-k3-AxV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bEM-ec-Jue" kind="relationship" relationship="rootViewController" id="hdB-GP-eGu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vep-b6-dI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-753" y="159"/>
+        </scene>
+        <!--Landing View Controller-->
+        <scene sceneID="Mbr-Gm-1x9">
+            <objects>
+                <viewController id="bEM-ec-Jue" customClass="LandingViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZuK-wz-gb4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Flow Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzT-k0-e57">
+                                <rect key="frame" x="111.5" y="84" width="152.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fwN-cr-ur5">
+                                <rect key="frame" x="129.5" y="169" width="117" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDt-mu-bE7">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="30"/>
+                                        <state key="normal" title="Onboarding Flow"/>
+                                        <connections>
+                                            <action selector="loginAction:" destination="bEM-ec-Jue" eventType="touchUpInside" id="3ML-nJ-H9s"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a flow below to test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sE3-A4-b3I">
+                                <rect key="frame" x="92.5" y="112" width="189.5" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fwN-cr-ur5" firstAttribute="centerX" secondItem="gzT-k0-e57" secondAttribute="centerX" id="6Lz-wY-hEb"/>
+                            <constraint firstItem="gzT-k0-e57" firstAttribute="centerX" secondItem="Y0I-H1-r8I" secondAttribute="centerX" id="NoB-As-goL"/>
+                            <constraint firstItem="sE3-A4-b3I" firstAttribute="centerX" secondItem="gzT-k0-e57" secondAttribute="centerX" id="Ta2-PX-ee2"/>
+                            <constraint firstItem="gzT-k0-e57" firstAttribute="top" secondItem="Y0I-H1-r8I" secondAttribute="top" constant="20" id="XHj-jF-1QG"/>
+                            <constraint firstItem="fwN-cr-ur5" firstAttribute="top" secondItem="sE3-A4-b3I" secondAttribute="bottom" constant="39" id="bey-oa-o8I"/>
+                            <constraint firstItem="sE3-A4-b3I" firstAttribute="top" secondItem="gzT-k0-e57" secondAttribute="bottom" constant="7.5" id="tIY-9P-agu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y0I-H1-r8I"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZqT-to-dbN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPT-Ft-TbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="159"/>
+        </scene>
+    </scenes>
+</document>

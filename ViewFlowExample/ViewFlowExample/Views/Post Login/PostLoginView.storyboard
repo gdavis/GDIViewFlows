@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ix1-Qw-oLq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post Login View Controller-->
+        <scene sceneID="vEX-Hb-KrG">
+            <objects>
+                <viewController id="ix1-Qw-oLq" customClass="PostLoginViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ZX-c9-Ejt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for logging in!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4T-bo-zek">
+                                <rect key="frame" x="105" y="47" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you can enjoy all the benefits of flow patterns!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIZ-9E-KL9">
+                                <rect key="frame" x="0.0" y="76" width="375" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqj-7a-S9k">
+                                <rect key="frame" x="95" y="190" width="186" height="30"/>
+                                <state key="normal" title="Whatever, next step please"/>
+                                <connections>
+                                    <action selector="nextAction:" destination="ix1-Qw-oLq" eventType="touchUpInside" id="h8U-K4-NMc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nIZ-9E-KL9" firstAttribute="top" secondItem="W4T-bo-zek" secondAttribute="bottom" constant="8" id="0Z9-Px-fk3"/>
+                            <constraint firstItem="Sqj-7a-S9k" firstAttribute="top" secondItem="nIZ-9E-KL9" secondAttribute="bottom" constant="96" id="6Tu-st-HzQ"/>
+                            <constraint firstItem="W4T-bo-zek" firstAttribute="top" secondItem="mhY-66-Lcn" secondAttribute="top" constant="27" id="JwB-xU-y9m"/>
+                            <constraint firstItem="nIZ-9E-KL9" firstAttribute="leading" secondItem="mhY-66-Lcn" secondAttribute="leading" id="QV2-kD-Wsh"/>
+                            <constraint firstItem="Sqj-7a-S9k" firstAttribute="centerX" secondItem="mhY-66-Lcn" secondAttribute="centerX" id="ZVv-nX-ezH"/>
+                            <constraint firstItem="W4T-bo-zek" firstAttribute="centerX" secondItem="mhY-66-Lcn" secondAttribute="centerX" id="eua-09-T4q"/>
+                            <constraint firstItem="mhY-66-Lcn" firstAttribute="trailing" secondItem="nIZ-9E-KL9" secondAttribute="trailing" id="sGP-Sd-8cZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mhY-66-Lcn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ef6-UM-Xon" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.40000000000001" y="312.59370314842579"/>
+        </scene>
+    </scenes>
+</document>
