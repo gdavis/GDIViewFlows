@@ -10,6 +10,12 @@ import GDIViewFlows
 
 class MissionSummaryStep: BaseFlowStep {
 
+    // MARK: - Properties
+
+    var selectedRole: ChooseRoleViewController.Role?
+    var selectedShip: ChooseSpacecraftViewController.Spacecraft?
+    var selectedDestination: ChooseDestinationViewController.MissionDestination?
+
     // MARK: - BaseFlowStep Overrides
 
     override var viewController: UIViewController {
@@ -24,8 +30,17 @@ class MissionSummaryStep: BaseFlowStep {
         return controller
     }()
 
+    override func resume() {
+        super.resume()
+
+        summaryViewController.roleLabel.text = selectedRole?.name
+        summaryViewController.spacecraftLabel.text = selectedShip?.name
+        summaryViewController.destinationLabel.text = selectedDestination?.name
+    }
+
     // MARK: - Choose Missions
 
+    // TODO:(grant) Similar enums are in the view controller. Should it be moved?
     enum MissionOption: Int, NavigationDestination {
         case role, spacecraft, destination
     }

@@ -14,6 +14,12 @@
 		771CAA56202C07AE008CCE34 /* MissionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA55202C07AE008CCE34 /* MissionSummaryViewController.swift */; };
 		771CAA58202C07C2008CCE34 /* MissionSummaryStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA57202C07C2008CCE34 /* MissionSummaryStep.swift */; };
 		771CAA5C202C0AD1008CCE34 /* MissionFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA5B202C0AD1008CCE34 /* MissionFlow.swift */; };
+		771CAA5E202C3FA0008CCE34 /* ChooseRoleView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771CAA5D202C3FA0008CCE34 /* ChooseRoleView.storyboard */; };
+		771CAA60202C40EE008CCE34 /* ChooseRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA5F202C40EE008CCE34 /* ChooseRoleViewController.swift */; };
+		771CAA62202C43F0008CCE34 /* ChooseSpacecraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA61202C43F0008CCE34 /* ChooseSpacecraftViewController.swift */; };
+		771CAA64202C4476008CCE34 /* ChooseSpacecraftView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771CAA63202C4476008CCE34 /* ChooseSpacecraftView.storyboard */; };
+		771CAA67202C4804008CCE34 /* ChooseDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA66202C4804008CCE34 /* ChooseDestinationViewController.swift */; };
+		771CAA69202C48BB008CCE34 /* ChooseDestinationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771CAA68202C48BB008CCE34 /* ChooseDestinationView.storyboard */; };
 		772B56B9202953BA00AEB8F3 /* RegisterSurveyStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B56B8202953BA00AEB8F3 /* RegisterSurveyStep.swift */; };
 		772B56BC2029548A00AEB8F3 /* RegisterSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B56BB2029548A00AEB8F3 /* RegisterSurveyViewController.swift */; };
 		772B56BE202954B800AEB8F3 /* RegisterSurveyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772B56BD202954B800AEB8F3 /* RegisterSurveyView.storyboard */; };
@@ -61,6 +67,12 @@
 		771CAA55202C07AE008CCE34 /* MissionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSummaryViewController.swift; sourceTree = "<group>"; };
 		771CAA57202C07C2008CCE34 /* MissionSummaryStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSummaryStep.swift; sourceTree = "<group>"; };
 		771CAA5B202C0AD1008CCE34 /* MissionFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionFlow.swift; sourceTree = "<group>"; };
+		771CAA5D202C3FA0008CCE34 /* ChooseRoleView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseRoleView.storyboard; sourceTree = "<group>"; };
+		771CAA5F202C40EE008CCE34 /* ChooseRoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRoleViewController.swift; sourceTree = "<group>"; };
+		771CAA61202C43F0008CCE34 /* ChooseSpacecraftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSpacecraftViewController.swift; sourceTree = "<group>"; };
+		771CAA63202C4476008CCE34 /* ChooseSpacecraftView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseSpacecraftView.storyboard; sourceTree = "<group>"; };
+		771CAA66202C4804008CCE34 /* ChooseDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDestinationViewController.swift; sourceTree = "<group>"; };
+		771CAA68202C48BB008CCE34 /* ChooseDestinationView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseDestinationView.storyboard; sourceTree = "<group>"; };
 		772B56B8202953BA00AEB8F3 /* RegisterSurveyStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSurveyStep.swift; sourceTree = "<group>"; };
 		772B56BB2029548A00AEB8F3 /* RegisterSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSurveyViewController.swift; sourceTree = "<group>"; };
 		772B56BD202954B800AEB8F3 /* RegisterSurveyView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterSurveyView.storyboard; sourceTree = "<group>"; };
@@ -128,7 +140,7 @@
 				771CAA52202C0624008CCE34 /* Summary */,
 				771CAA4D202BFFB3008CCE34 /* Choose Role */,
 				771CAA4E202BFFB7008CCE34 /* Choose Spacecraft */,
-				771CAA4F202BFFC4008CCE34 /* Choose Supplies */,
+				771CAA65202C47A2008CCE34 /* Choose Destination */,
 				771CAA50202C0584008CCE34 /* MissionPlanningFlow.swift */,
 			);
 			path = "Mission Planning";
@@ -144,6 +156,8 @@
 		771CAA4D202BFFB3008CCE34 /* Choose Role */ = {
 			isa = PBXGroup;
 			children = (
+				771CAA5F202C40EE008CCE34 /* ChooseRoleViewController.swift */,
+				771CAA5D202C3FA0008CCE34 /* ChooseRoleView.storyboard */,
 			);
 			path = "Choose Role";
 			sourceTree = "<group>";
@@ -151,15 +165,10 @@
 		771CAA4E202BFFB7008CCE34 /* Choose Spacecraft */ = {
 			isa = PBXGroup;
 			children = (
+				771CAA61202C43F0008CCE34 /* ChooseSpacecraftViewController.swift */,
+				771CAA63202C4476008CCE34 /* ChooseSpacecraftView.storyboard */,
 			);
 			path = "Choose Spacecraft";
-			sourceTree = "<group>";
-		};
-		771CAA4F202BFFC4008CCE34 /* Choose Supplies */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Choose Supplies";
 			sourceTree = "<group>";
 		};
 		771CAA52202C0624008CCE34 /* Summary */ = {
@@ -170,6 +179,15 @@
 				771CAA53202C0633008CCE34 /* MissionSummaryView.storyboard */,
 			);
 			path = Summary;
+			sourceTree = "<group>";
+		};
+		771CAA65202C47A2008CCE34 /* Choose Destination */ = {
+			isa = PBXGroup;
+			children = (
+				771CAA66202C4804008CCE34 /* ChooseDestinationViewController.swift */,
+				771CAA68202C48BB008CCE34 /* ChooseDestinationView.storyboard */,
+			);
+			path = "Choose Destination";
 			sourceTree = "<group>";
 		};
 		772B56BA2029547500AEB8F3 /* Survey */ = {
@@ -203,7 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				7771C2B22008560000D57351 /* AppDelegate.swift */,
-				7771C28F2008524F00D57351 /* Landing */,
+				7771C2902008526100D57351 /* LandingView.storyboard */,
+				7771C2922008541C00D57351 /* LandingViewController.swift */,
 				771CAA49202BFF06008CCE34 /* Flows */,
 				7771C2B82008594700D57351 /* Utility */,
 				7771C28120084A2D00D57351 /* Supporting Files */,
@@ -258,15 +277,6 @@
 				770667FE20295D0500111392 /* PostLoginView.storyboard */,
 			);
 			path = "Post Login";
-			sourceTree = "<group>";
-		};
-		7771C28F2008524F00D57351 /* Landing */ = {
-			isa = PBXGroup;
-			children = (
-				7771C2902008526100D57351 /* LandingView.storyboard */,
-				7771C2922008541C00D57351 /* LandingViewController.swift */,
-			);
-			path = Landing;
 			sourceTree = "<group>";
 		};
 		7771C2B5200858C000D57351 /* Login */ = {
@@ -355,9 +365,12 @@
 				772B56BE202954B800AEB8F3 /* RegisterSurveyView.storyboard in Resources */,
 				77F3730B202BC5130099551D /* ForgotPasswordView.storyboard in Resources */,
 				7771C2C62008647700D57351 /* RegisterView.storyboard in Resources */,
+				771CAA5E202C3FA0008CCE34 /* ChooseRoleView.storyboard in Resources */,
 				7771C265200845A900D57351 /* Assets.xcassets in Resources */,
 				7771C2BF20085B9F00D57351 /* LoginView.storyboard in Resources */,
 				770667FF20295D0500111392 /* PostLoginView.storyboard in Resources */,
+				771CAA69202C48BB008CCE34 /* ChooseDestinationView.storyboard in Resources */,
+				771CAA64202C4476008CCE34 /* ChooseSpacecraftView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +384,7 @@
 				7771C2C82008653400D57351 /* RegisterViewController.swift in Sources */,
 				772B56BC2029548A00AEB8F3 /* RegisterSurveyViewController.swift in Sources */,
 				7771C2BD20085B4200D57351 /* LoginViewController.swift in Sources */,
+				771CAA60202C40EE008CCE34 /* ChooseRoleViewController.swift in Sources */,
 				7771C2B32008560000D57351 /* AppDelegate.swift in Sources */,
 				772B56B9202953BA00AEB8F3 /* RegisterSurveyStep.swift in Sources */,
 				771CAA51202C0584008CCE34 /* MissionPlanningFlow.swift in Sources */,
@@ -379,10 +393,12 @@
 				7771C2CA2008658900D57351 /* RegisterStep.swift in Sources */,
 				7706680120295DD200111392 /* PostLoginViewController.swift in Sources */,
 				7771C2C220085F6200D57351 /* LoginStep.swift in Sources */,
+				771CAA67202C4804008CCE34 /* ChooseDestinationViewController.swift in Sources */,
 				7771C2932008541C00D57351 /* LandingViewController.swift in Sources */,
 				7771C28C20084B2200D57351 /* OnboardingFlow.swift in Sources */,
 				771CAA56202C07AE008CCE34 /* MissionSummaryViewController.swift in Sources */,
 				771CAA58202C07C2008CCE34 /* MissionSummaryStep.swift in Sources */,
+				771CAA62202C43F0008CCE34 /* ChooseSpacecraftViewController.swift in Sources */,
 				77F37309202BC42E0099551D /* ForgotPasswordViewController.swift in Sources */,
 				77F37307202BC3F10099551D /* ForgotPasswordStep.swift in Sources */,
 				7771C2BB2008595C00D57351 /* UIViewController+Storyboard.swift in Sources */,

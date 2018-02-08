@@ -48,10 +48,10 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sE3-A4-b3I">
-                                <rect key="frame" x="18.5" y="84" width="337.5" height="78"/>
+                                <rect key="frame" x="19" y="84" width="337.5" height="78"/>
                                 <string key="text">This sample project demonstrates using a Flow pattern to create non-linear view paths. 
 
-In this demo we'll plan a trip to Mars!</string>
+In this demo we'll plan a space voyage!</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
