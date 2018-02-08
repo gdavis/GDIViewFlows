@@ -37,7 +37,7 @@ open class BaseFlowStep: NSObject, FlowStep, UINavigationControllerDelegate {
 
     open func resume() {
         print("\(self) step has been resumed.")
-        
+
         navigationController.delegate = self
     }
 

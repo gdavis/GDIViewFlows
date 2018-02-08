@@ -11,7 +11,6 @@ import GDIViewFlows
 
 class LoginFlow: BaseFlow {
 
-
     // MARK: - Flow Steps
 
     private lazy var loginStep: LoginStep = {
@@ -36,12 +35,7 @@ class LoginFlow: BaseFlow {
 
     override func userNavigated(to destination: NavigationDestination) {
         // forward up onboarding navigation to the parent flow
-        guard let loginDestination = destination as? OnboardingFlow.Destination else { return }
-
-        switch loginDestination {
-        case .login, .register, .forgotPassword:
-            delegate?.userNavigated(to: loginDestination)
-        }
+        delegate?.userNavigated(to: destination)
     }
 
     override func stepCompleted(_ step: FlowStep) {

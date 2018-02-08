@@ -11,6 +11,10 @@ import GDIViewFlows
 
 class RegisterStep: BaseFlowStep {
 
+    enum Destination: Int, NavigationDestination {
+        case login
+    }
+
     override var viewController: UIViewController {
         return registerViewController
     }
@@ -34,6 +38,6 @@ class RegisterStep: BaseFlowStep {
     }
 
     func navigateToLogin() {
-        delegate?.userNavigated(to: OnboardingFlow.Destination.login)
+        delegate?.userNavigated(to: Destination.login)
     }
 }

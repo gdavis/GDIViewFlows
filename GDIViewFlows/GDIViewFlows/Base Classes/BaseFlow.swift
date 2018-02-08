@@ -39,7 +39,6 @@ open class BaseFlow: BaseFlowStep, Flow, FlowStepDelegate {
         steps.append(step)
 
         nextStep()
-
         printSteps()
     }
 
@@ -49,7 +48,9 @@ open class BaseFlow: BaseFlowStep, Flow, FlowStepDelegate {
         if let previousStep = steps.last {
             previousStep.resume()
 
-            navigationController.popToViewController(previousStep.viewController, animated: true)
+            if navigationController.viewControllers.last != previousStep.viewController {
+                navigationController.popToViewController(previousStep.viewController, animated: true)
+            }
         } else {
             cancel()
         }

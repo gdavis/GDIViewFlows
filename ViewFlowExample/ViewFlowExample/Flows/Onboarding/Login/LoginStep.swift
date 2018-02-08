@@ -10,6 +10,13 @@ import Foundation
 import GDIViewFlows
 
 class LoginStep: BaseFlowStep {
+
+    // MARK: - Constants
+
+    enum Destination: Int, NavigationDestination {
+        case register, forgotPassword
+    }
+
     override var viewController: UIViewController {
         return loginViewController
     }
@@ -31,10 +38,10 @@ extension LoginStep {
     }
 
     func createAccount() {
-        delegate?.userNavigated(to: OnboardingFlow.Destination.register)
+        delegate?.userNavigated(to: Destination.register)
     }
 
     func forgotPassword() {
-        delegate?.userNavigated(to: OnboardingFlow.Destination.forgotPassword)
+        delegate?.userNavigated(to: Destination.forgotPassword)
     }
 }
