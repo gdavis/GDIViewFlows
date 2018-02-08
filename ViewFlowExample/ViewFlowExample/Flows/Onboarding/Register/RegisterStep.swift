@@ -30,12 +30,7 @@ class RegisterStep: BaseFlowStep {
         self.username = username
         self.showOptionalView = showOptionalView
 
-        // here we'd perform an API call and handle the response.
-        // when we get a successful login, we'd complete the step.
-        // for this demo, we fake the API call and move on
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) { [weak self] in
-            self?.finish()
-        }
+        finish()
     }
 
     func navigateToLogin() {

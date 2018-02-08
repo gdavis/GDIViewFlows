@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-753" y="159"/>
         </scene>
-        <!--Landing View Controller-->
+        <!--Get your ass to Mars!-->
         <scene sceneID="Mbr-Gm-1x9">
             <objects>
                 <viewController id="bEM-ec-Jue" customClass="LandingViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,14 +35,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Flow Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzT-k0-e57">
-                                <rect key="frame" x="111.5" y="84" width="152.5" height="20.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fwN-cr-ur5">
-                                <rect key="frame" x="131" y="385" width="113" height="30"/>
+                                <rect key="frame" x="131" y="357" width="113" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDt-mu-bE7">
                                         <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
@@ -53,8 +48,8 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sE3-A4-b3I">
-                                <rect key="frame" x="24.5" y="112" width="326" height="78"/>
-                                <string key="text">This sample project demonstrates using a Flow pattern to create non-linear view structures. 
+                                <rect key="frame" x="18.5" y="84" width="337.5" height="78"/>
+                                <string key="text">This sample project demonstrates using a Flow pattern to create non-linear view paths. 
 
 In this demo we'll plan a trip to Mars!</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
@@ -62,7 +57,7 @@ In this demo we'll plan a trip to Mars!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🚀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFW-qh-dxh">
-                                <rect key="frame" x="135" y="230" width="104" height="115"/>
+                                <rect key="frame" x="135" y="202" width="104" height="115"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="96"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -70,20 +65,17 @@ In this demo we'll plan a trip to Mars!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fwN-cr-ur5" firstAttribute="centerX" secondItem="gzT-k0-e57" secondAttribute="centerX" id="6Lz-wY-hEb"/>
+                            <constraint firstItem="sE3-A4-b3I" firstAttribute="top" secondItem="Y0I-H1-r8I" secondAttribute="top" constant="20" id="18O-Mo-GxY"/>
+                            <constraint firstItem="sE3-A4-b3I" firstAttribute="width" secondItem="ZuK-wz-gb4" secondAttribute="width" multiplier="0.9" id="9gG-3O-gaJ"/>
                             <constraint firstItem="IFW-qh-dxh" firstAttribute="top" secondItem="sE3-A4-b3I" secondAttribute="bottom" constant="40" id="L6l-WK-Pke"/>
-                            <constraint firstItem="gzT-k0-e57" firstAttribute="centerX" secondItem="Y0I-H1-r8I" secondAttribute="centerX" id="NoB-As-goL"/>
-                            <constraint firstItem="sE3-A4-b3I" firstAttribute="centerX" secondItem="gzT-k0-e57" secondAttribute="centerX" id="Ta2-PX-ee2"/>
                             <constraint firstItem="IFW-qh-dxh" firstAttribute="centerX" secondItem="sE3-A4-b3I" secondAttribute="centerX" id="ToI-gS-mzo"/>
-                            <constraint firstItem="gzT-k0-e57" firstAttribute="top" secondItem="Y0I-H1-r8I" secondAttribute="top" constant="20" id="XHj-jF-1QG"/>
-                            <constraint firstItem="sE3-A4-b3I" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Y0I-H1-r8I" secondAttribute="trailing" id="YPW-Zm-nJG"/>
-                            <constraint firstItem="Y0I-H1-r8I" firstAttribute="leading" relation="lessThanOrEqual" secondItem="sE3-A4-b3I" secondAttribute="leading" id="fue-qh-30Z"/>
                             <constraint firstItem="fwN-cr-ur5" firstAttribute="top" secondItem="IFW-qh-dxh" secondAttribute="bottom" constant="40" id="nQB-tm-WZJ"/>
-                            <constraint firstItem="sE3-A4-b3I" firstAttribute="top" secondItem="gzT-k0-e57" secondAttribute="bottom" constant="7.5" id="tIY-9P-agu"/>
+                            <constraint firstItem="IFW-qh-dxh" firstAttribute="centerX" secondItem="Y0I-H1-r8I" secondAttribute="centerX" id="ti5-3E-00x"/>
+                            <constraint firstItem="fwN-cr-ur5" firstAttribute="centerX" secondItem="Y0I-H1-r8I" secondAttribute="centerX" id="zHW-kF-5GZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y0I-H1-r8I"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ZqT-to-dbN"/>
+                    <navigationItem key="navigationItem" title="Get your ass to Mars!" id="ZqT-to-dbN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPT-Ft-TbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -21,7 +21,6 @@ class OnboardingFlow: BaseFlow {
         case login, register, forgotPassword
     }
 
-    
     // MARK: - Flow Steps
 
     fileprivate lazy var loginStep: LoginFlow = {
@@ -67,7 +66,7 @@ class OnboardingFlow: BaseFlow {
 
         case is RegisterStep:
             if registerStep.showOptionalView {
-                let optionalStep = OptionalSettingsStep(navigationController: navigationController, delegate: self)
+                let optionalStep = RegisterSurveyStep(navigationController: navigationController, delegate: self)
                 optionalStep.canNavigateBack = false
 
                 appendAndStart(step: optionalStep)
@@ -78,7 +77,7 @@ class OnboardingFlow: BaseFlow {
         case is ForgotPasswordStep:
             popToPreviousStep()
 
-        case is OptionalSettingsStep:
+        case is RegisterSurveyStep:
             finish()
 
         default:

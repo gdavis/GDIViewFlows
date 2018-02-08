@@ -29,15 +29,16 @@ open class BaseFlowStep: NSObject, FlowStep, UINavigationControllerDelegate {
     open func start() {
         print("\(self) step is starting.")
 
-        self.navigationController.delegate = self
-        self.state = .started
+        navigationController.delegate = self
+        state = .started
 
         display()
     }
 
     open func resume() {
-        // default implementation does nothing
         print("\(self) step has been resumed.")
+        
+        navigationController.delegate = self
     }
 
     open func cancel() {

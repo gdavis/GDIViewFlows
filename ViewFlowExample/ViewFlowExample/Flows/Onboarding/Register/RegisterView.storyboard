@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVT-kM-qLo">
-                                <rect key="frame" x="64" y="279" width="247.5" height="30"/>
+                                <rect key="frame" x="64" y="319" width="247.5" height="30"/>
                                 <state key="normal" title="Create Account"/>
                                 <connections>
                                     <action selector="registerAction:" destination="HbJ-IH-TBO" eventType="touchUpInside" id="8Y7-AE-M6S"/>
@@ -44,23 +44,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register New Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMo-rD-a5b">
-                                <rect key="frame" x="99" y="40" width="177" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a New MarsApp Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMo-rD-a5b">
+                                <rect key="frame" x="60.5" y="40" width="254" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NP0-wa-1Mn">
-                                <rect key="frame" x="262.5" y="228" width="51" height="31"/>
+                                <rect key="frame" x="262.5" y="248" width="51" height="31"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show optional view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ak-Ai-my6">
-                                <rect key="frame" x="64" y="234" width="188.5" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Optional Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ak-Ai-my6">
+                                <rect key="frame" x="64" y="254" width="188.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5F-l6-jOe">
-                                <rect key="frame" x="64.5" y="329" width="247.5" height="30"/>
+                                <rect key="frame" x="64.5" y="369" width="247.5" height="30"/>
                                 <state key="normal" title="Already have an account?"/>
                                 <connections>
                                     <action selector="loginAction:" destination="HbJ-IH-TBO" eventType="touchUpInside" id="m37-0t-Jzd"/>
@@ -69,10 +69,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6ak-Ai-my6" firstAttribute="top" secondItem="N4t-Tx-4gS" secondAttribute="bottom" constant="20" id="2me-C0-pZy"/>
+                            <constraint firstItem="6ak-Ai-my6" firstAttribute="top" secondItem="N4t-Tx-4gS" secondAttribute="bottom" constant="40" id="2me-C0-pZy"/>
                             <constraint firstItem="BMD-l7-2hR" firstAttribute="top" secondItem="PMo-rD-a5b" secondAttribute="bottom" constant="23" id="66D-pL-qfq"/>
                             <constraint firstItem="PMo-rD-a5b" firstAttribute="centerX" secondItem="bFr-72-QBY" secondAttribute="centerX" id="6d5-mA-ET0"/>
-                            <constraint firstItem="EVT-kM-qLo" firstAttribute="top" secondItem="NP0-wa-1Mn" secondAttribute="bottom" constant="20" id="6fp-aY-9OQ"/>
+                            <constraint firstItem="EVT-kM-qLo" firstAttribute="top" secondItem="NP0-wa-1Mn" secondAttribute="bottom" constant="40" id="6fp-aY-9OQ"/>
                             <constraint firstItem="NP0-wa-1Mn" firstAttribute="trailing" secondItem="N4t-Tx-4gS" secondAttribute="trailing" id="907-oY-t9o"/>
                             <constraint firstItem="N4t-Tx-4gS" firstAttribute="leading" secondItem="rwe-SK-Lr9" secondAttribute="leading" id="Eca-Zr-F3F"/>
                             <constraint firstItem="PMo-rD-a5b" firstAttribute="top" secondItem="bFr-72-QBY" secondAttribute="top" constant="20" id="Eig-ua-w73"/>

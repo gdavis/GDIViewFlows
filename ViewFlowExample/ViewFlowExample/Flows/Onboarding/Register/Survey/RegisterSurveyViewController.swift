@@ -1,5 +1,5 @@
 //
-//  OptionalSettingsViewController.swift
+//  RegisterSurveyViewController.swift
 //  ViewFlowExample
 //
 //  Created by Grant Davis on 2/5/18.
@@ -9,13 +9,13 @@
 import UIKit
 import GDIViewFlows
 
-class OptionalSettingsViewController: UITableViewController, StoryboardViewController, FlowView {
+class RegisterSurveyViewController: UITableViewController, StoryboardViewController, FlowView {
 
-    typealias ViewStep = OptionalSettingsStep
+    typealias ViewStep = RegisterSurveyStep
 
-    var step: OptionalSettingsStep?
+    var step: RegisterSurveyStep?
 
-    static var storyboardName: String = "OptionalSettingsView"
+    static var storyboardName: String = "RegisterSurveyView"
 
 
     @IBAction func nextAction(_ sender: Any) {

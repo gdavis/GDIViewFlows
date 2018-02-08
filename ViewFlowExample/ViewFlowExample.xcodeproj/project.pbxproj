@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		770667FF20295D0500111392 /* PostLoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770667FE20295D0500111392 /* PostLoginView.storyboard */; };
 		7706680120295DD200111392 /* PostLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706680020295DD200111392 /* PostLoginViewController.swift */; };
-		772B56B9202953BA00AEB8F3 /* OptionalSettingsStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B56B8202953BA00AEB8F3 /* OptionalSettingsStep.swift */; };
-		772B56BC2029548A00AEB8F3 /* OptionalSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B56BB2029548A00AEB8F3 /* OptionalSettingsViewController.swift */; };
-		772B56BE202954B800AEB8F3 /* OptionalSettingsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772B56BD202954B800AEB8F3 /* OptionalSettingsView.storyboard */; };
+		771CAA51202C0584008CCE34 /* MissionPlanningFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA50202C0584008CCE34 /* MissionPlanningFlow.swift */; };
+		771CAA54202C0633008CCE34 /* MissionSummaryView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771CAA53202C0633008CCE34 /* MissionSummaryView.storyboard */; };
+		771CAA56202C07AE008CCE34 /* MissionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA55202C07AE008CCE34 /* MissionSummaryViewController.swift */; };
+		771CAA58202C07C2008CCE34 /* MissionSummaryStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA57202C07C2008CCE34 /* MissionSummaryStep.swift */; };
+		771CAA5C202C0AD1008CCE34 /* MissionFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA5B202C0AD1008CCE34 /* MissionFlow.swift */; };
+		772B56B9202953BA00AEB8F3 /* RegisterSurveyStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B56B8202953BA00AEB8F3 /* RegisterSurveyStep.swift */; };
+		772B56BC2029548A00AEB8F3 /* RegisterSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B56BB2029548A00AEB8F3 /* RegisterSurveyViewController.swift */; };
+		772B56BE202954B800AEB8F3 /* RegisterSurveyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772B56BD202954B800AEB8F3 /* RegisterSurveyView.storyboard */; };
 		7771C265200845A900D57351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7771C264200845A900D57351 /* Assets.xcassets */; };
 		7771C268200845A900D57351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7771C266200845A900D57351 /* LaunchScreen.storyboard */; };
 		7771C27E20084A1E00D57351 /* GDIViewFlows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771C27D20084A1A00D57351 /* GDIViewFlows.framework */; };
@@ -51,9 +56,14 @@
 /* Begin PBXFileReference section */
 		770667FE20295D0500111392 /* PostLoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostLoginView.storyboard; sourceTree = "<group>"; };
 		7706680020295DD200111392 /* PostLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginViewController.swift; sourceTree = "<group>"; };
-		772B56B8202953BA00AEB8F3 /* OptionalSettingsStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSettingsStep.swift; sourceTree = "<group>"; };
-		772B56BB2029548A00AEB8F3 /* OptionalSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSettingsViewController.swift; sourceTree = "<group>"; };
-		772B56BD202954B800AEB8F3 /* OptionalSettingsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OptionalSettingsView.storyboard; sourceTree = "<group>"; };
+		771CAA50202C0584008CCE34 /* MissionPlanningFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPlanningFlow.swift; sourceTree = "<group>"; };
+		771CAA53202C0633008CCE34 /* MissionSummaryView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MissionSummaryView.storyboard; sourceTree = "<group>"; };
+		771CAA55202C07AE008CCE34 /* MissionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSummaryViewController.swift; sourceTree = "<group>"; };
+		771CAA57202C07C2008CCE34 /* MissionSummaryStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSummaryStep.swift; sourceTree = "<group>"; };
+		771CAA5B202C0AD1008CCE34 /* MissionFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionFlow.swift; sourceTree = "<group>"; };
+		772B56B8202953BA00AEB8F3 /* RegisterSurveyStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSurveyStep.swift; sourceTree = "<group>"; };
+		772B56BB2029548A00AEB8F3 /* RegisterSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSurveyViewController.swift; sourceTree = "<group>"; };
+		772B56BD202954B800AEB8F3 /* RegisterSurveyView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterSurveyView.storyboard; sourceTree = "<group>"; };
 		7771C25A200845A900D57351 /* ViewFlowExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFlowExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7771C264200845A900D57351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7771C267200845A900D57351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,10 +114,10 @@
 		771CAA49202BFF06008CCE34 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				7771C28F2008524F00D57351 /* Landing */,
 				771CAA48202BFE31008CCE34 /* Onboarding */,
 				771CAA4B202BFF95008CCE34 /* Mission Planning */,
-				771CAA4C202BFF9E008CCE34 /* Mission Summary */,
+				771CAA4C202BFF9E008CCE34 /* Mission Launch */,
+				771CAA5B202C0AD1008CCE34 /* MissionFlow.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -115,18 +125,20 @@
 		771CAA4B202BFF95008CCE34 /* Mission Planning */ = {
 			isa = PBXGroup;
 			children = (
+				771CAA52202C0624008CCE34 /* Summary */,
 				771CAA4D202BFFB3008CCE34 /* Choose Role */,
 				771CAA4E202BFFB7008CCE34 /* Choose Spacecraft */,
 				771CAA4F202BFFC4008CCE34 /* Choose Supplies */,
+				771CAA50202C0584008CCE34 /* MissionPlanningFlow.swift */,
 			);
 			path = "Mission Planning";
 			sourceTree = "<group>";
 		};
-		771CAA4C202BFF9E008CCE34 /* Mission Summary */ = {
+		771CAA4C202BFF9E008CCE34 /* Mission Launch */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "Mission Summary";
+			path = "Mission Launch";
 			sourceTree = "<group>";
 		};
 		771CAA4D202BFFB3008CCE34 /* Choose Role */ = {
@@ -150,14 +162,24 @@
 			path = "Choose Supplies";
 			sourceTree = "<group>";
 		};
-		772B56BA2029547500AEB8F3 /* Optional Settings */ = {
+		771CAA52202C0624008CCE34 /* Summary */ = {
 			isa = PBXGroup;
 			children = (
-				772B56B8202953BA00AEB8F3 /* OptionalSettingsStep.swift */,
-				772B56BB2029548A00AEB8F3 /* OptionalSettingsViewController.swift */,
-				772B56BD202954B800AEB8F3 /* OptionalSettingsView.storyboard */,
+				771CAA57202C07C2008CCE34 /* MissionSummaryStep.swift */,
+				771CAA55202C07AE008CCE34 /* MissionSummaryViewController.swift */,
+				771CAA53202C0633008CCE34 /* MissionSummaryView.storyboard */,
 			);
-			path = "Optional Settings";
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		772B56BA2029547500AEB8F3 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				772B56B8202953BA00AEB8F3 /* RegisterSurveyStep.swift */,
+				772B56BB2029548A00AEB8F3 /* RegisterSurveyViewController.swift */,
+				772B56BD202954B800AEB8F3 /* RegisterSurveyView.storyboard */,
+			);
+			path = Survey;
 			sourceTree = "<group>";
 		};
 		7771C251200845A900D57351 = {
@@ -181,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				7771C2B22008560000D57351 /* AppDelegate.swift */,
+				7771C28F2008524F00D57351 /* Landing */,
 				771CAA49202BFF06008CCE34 /* Flows */,
 				7771C2B82008594700D57351 /* Utility */,
 				7771C28120084A2D00D57351 /* Supporting Files */,
@@ -209,7 +232,7 @@
 		7771C28520084A4800D57351 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				772B56BA2029547500AEB8F3 /* Optional Settings */,
+				772B56BA2029547500AEB8F3 /* Survey */,
 				7771C2C92008658900D57351 /* RegisterStep.swift */,
 				7771C2C72008653400D57351 /* RegisterViewController.swift */,
 				7771C2C52008647700D57351 /* RegisterView.storyboard */,
@@ -328,7 +351,8 @@
 			files = (
 				7771C268200845A900D57351 /* LaunchScreen.storyboard in Resources */,
 				7771C2912008526100D57351 /* LandingView.storyboard in Resources */,
-				772B56BE202954B800AEB8F3 /* OptionalSettingsView.storyboard in Resources */,
+				771CAA54202C0633008CCE34 /* MissionSummaryView.storyboard in Resources */,
+				772B56BE202954B800AEB8F3 /* RegisterSurveyView.storyboard in Resources */,
 				77F3730B202BC5130099551D /* ForgotPasswordView.storyboard in Resources */,
 				7771C2C62008647700D57351 /* RegisterView.storyboard in Resources */,
 				7771C265200845A900D57351 /* Assets.xcassets in Resources */,
@@ -345,16 +369,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7771C2C82008653400D57351 /* RegisterViewController.swift in Sources */,
-				772B56BC2029548A00AEB8F3 /* OptionalSettingsViewController.swift in Sources */,
+				772B56BC2029548A00AEB8F3 /* RegisterSurveyViewController.swift in Sources */,
 				7771C2BD20085B4200D57351 /* LoginViewController.swift in Sources */,
 				7771C2B32008560000D57351 /* AppDelegate.swift in Sources */,
-				772B56B9202953BA00AEB8F3 /* OptionalSettingsStep.swift in Sources */,
+				772B56B9202953BA00AEB8F3 /* RegisterSurveyStep.swift in Sources */,
+				771CAA51202C0584008CCE34 /* MissionPlanningFlow.swift in Sources */,
+				771CAA5C202C0AD1008CCE34 /* MissionFlow.swift in Sources */,
 				7771C2C4200862E600D57351 /* PostLoginStep.swift in Sources */,
 				7771C2CA2008658900D57351 /* RegisterStep.swift in Sources */,
 				7706680120295DD200111392 /* PostLoginViewController.swift in Sources */,
 				7771C2C220085F6200D57351 /* LoginStep.swift in Sources */,
 				7771C2932008541C00D57351 /* LandingViewController.swift in Sources */,
 				7771C28C20084B2200D57351 /* OnboardingFlow.swift in Sources */,
+				771CAA56202C07AE008CCE34 /* MissionSummaryViewController.swift in Sources */,
+				771CAA58202C07C2008CCE34 /* MissionSummaryStep.swift in Sources */,
 				77F37309202BC42E0099551D /* ForgotPasswordViewController.swift in Sources */,
 				77F37307202BC3F10099551D /* ForgotPasswordStep.swift in Sources */,
 				7771C2BB2008595C00D57351 /* UIViewController+Storyboard.swift in Sources */,

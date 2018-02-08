@@ -1,5 +1,5 @@
 //
-//  OptionalSettingsStep.swift
+//  RegisterSurveyStep.swift
 //  ViewFlowExample
 //
 //  Created by Grant Davis on 2/5/18.
@@ -9,14 +9,14 @@
 import Foundation
 import GDIViewFlows
 
-class OptionalSettingsStep: BaseFlowStep {
+class RegisterSurveyStep: BaseFlowStep {
 
     override var viewController: UIViewController {
         return optionalSettingsViewController
     }
 
-    lazy var optionalSettingsViewController: OptionalSettingsViewController = {
-        guard let controller: OptionalSettingsViewController = try? OptionalSettingsViewController.instantiatedFromStoryboard() else { return OptionalSettingsViewController() }
+    lazy var optionalSettingsViewController: RegisterSurveyViewController = {
+        guard let controller: RegisterSurveyViewController = try? RegisterSurveyViewController.instantiatedFromStoryboard() else { return RegisterSurveyViewController() }
 
         controller.step = self
 
