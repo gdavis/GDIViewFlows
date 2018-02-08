@@ -53,17 +53,21 @@ class MissionPlanningFlow: BaseFlow {
         switch step {
         case is ChooseRoleStep:
             summaryStep.selectedRole = chooseRoleStep.selectedRole
+            popToPreviousStep()
 
         case is ChooseSpacecraftStep:
             summaryStep.selectedShip = chooseSpacecraftStep.selectedSpacecraft
+            popToPreviousStep()
 
         case is ChooseDestinationStep:
             summaryStep.selectedDestination = chooseDestinationStep.selectedDestination
+            popToPreviousStep()
+
+        case is MissionSummaryStep:
+            finish()
 
         default:
             break
         }
-
-        popToPreviousStep()
     }
 }

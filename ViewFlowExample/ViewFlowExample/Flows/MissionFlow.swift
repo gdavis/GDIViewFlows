@@ -25,10 +25,6 @@ class MissionFlow: BaseFlow {
         return planningFlow
     }()
 
-//    fileprivate lazy var launchFlow: OnboardingFlow = {
-//        return OnboardingFlow(navigationController: navigationController, delegate: self)
-//    }()
-
 
     // MARK: - FlowStepDelegate Overrides
 

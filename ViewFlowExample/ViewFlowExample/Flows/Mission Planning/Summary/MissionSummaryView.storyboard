@@ -117,6 +117,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4a-1W-bDA">
                                                     <rect key="frame" x="16" y="11" width="343" height="47"/>
                                                     <state key="normal" title="Take off!"/>
+                                                    <connections>
+                                                        <action selector="takeOffAction:" destination="hKd-aR-HZm" eventType="touchUpInside" id="N9V-A7-Kp7"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

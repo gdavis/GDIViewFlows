@@ -33,4 +33,10 @@ class MissionSummaryViewController: UITableViewController, StoryboardViewControl
 
         step?.chooseOption(option)
     }
+
+    // MARK: - Actions
+
+    @IBAction func takeOffAction(_ sender: Any) {
+        step?.finish()
+    }
 }
