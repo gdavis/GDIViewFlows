@@ -12,7 +12,7 @@ import GDIViewFlows
 class PostLoginViewController: UIViewController, StoryboardViewController, FlowView {
 
     typealias ViewStep = PostLoginStep
-    var step: PostLoginStep?
+    var step: ViewStep?
 
     static var storyboardName: String = "PostLoginView"
 

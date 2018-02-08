@@ -16,6 +16,7 @@ public enum FlowStepState {
     case started
     case awaitingDependencies
     case finished
+    case cancelled
 }
 
 public protocol FlowStep: class {
@@ -29,6 +30,8 @@ public protocol FlowStep: class {
 
     init(navigationController: UINavigationController, delegate: FlowStepDelegate?)
     func start()
+    func resume()
+    func cancel()
 }
 
 public protocol FlowStepDelegate: class {
@@ -53,28 +56,11 @@ extension Flow {
     fileprivate func startStep(_ step: FlowStep) {
         guard Thread.isMainThread else { DispatchQueue.main.async(execute: { self.startStep(step) });  return }
 
-        setActiveStep(step)
         updateNavigationItem(forStep: step)
 
         step.start()
     }
-
-    fileprivate func setActiveStep(_ step: FlowStep) {
-        guard let index = steps.index(where: { (testStep) -> Bool in
-            return step === testStep
-        }) else { return }
-
-        print("active step: \(step), index: \(index)")
-
-        stepIndex = index
-
-        // the first step's ability to go back is the same as the flow's value
-        if stepIndex == 0 {
-            step.canNavigateBack = canNavigateBack
-        }
-    }
 }
-
 
 
 // MARK: UINavigationItem Configuration
@@ -82,6 +68,11 @@ extension Flow {
 extension Flow {
 
     public func updateNavigationItem(forStep step: FlowStep) {
+        // the first step's ability to go back is the same as the flow's value
+        if steps.count == 1 {
+            step.canNavigateBack = canNavigateBack
+        }
+
         setupBackButton(forStep: step)
     }
 

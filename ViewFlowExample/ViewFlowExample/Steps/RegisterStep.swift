@@ -18,6 +18,8 @@ class RegisterStep: BaseFlowStep {
     lazy var registerViewController: RegisterViewController = {
         guard let controller: RegisterViewController = try? RegisterViewController.instantiatedFromStoryboard() else { return RegisterViewController() }
 
+        controller.step = self
+
         return controller
     }()
 
@@ -34,5 +36,9 @@ class RegisterStep: BaseFlowStep {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) { [weak self] in
             self?.finish()
         }
+    }
+
+    func navigateToLogin() {
+        delegate?.userNavigated(to: OnboardingFlow.Destination.login)
     }
 }

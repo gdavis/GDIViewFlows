@@ -18,20 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for logging in!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4T-bo-zek">
-                                <rect key="frame" x="105" y="47" width="165" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for being a returning user" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4T-bo-zek">
+                                <rect key="frame" x="54.5" y="40" width="266" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you can enjoy all the benefits of flow patterns!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIZ-9E-KL9">
-                                <rect key="frame" x="0.0" y="76" width="375" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here's where we could list all the new amazing features since your last login!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIZ-9E-KL9">
+                                <rect key="frame" x="0.0" y="69" width="375" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqj-7a-S9k">
-                                <rect key="frame" x="95" y="190" width="186" height="30"/>
+                                <rect key="frame" x="95" y="201" width="186" height="30"/>
                                 <state key="normal" title="Whatever, next step please"/>
                                 <connections>
                                     <action selector="nextAction:" destination="ix1-Qw-oLq" eventType="touchUpInside" id="h8U-K4-NMc"/>
@@ -42,7 +42,7 @@
                         <constraints>
                             <constraint firstItem="nIZ-9E-KL9" firstAttribute="top" secondItem="W4T-bo-zek" secondAttribute="bottom" constant="8" id="0Z9-Px-fk3"/>
                             <constraint firstItem="Sqj-7a-S9k" firstAttribute="top" secondItem="nIZ-9E-KL9" secondAttribute="bottom" constant="96" id="6Tu-st-HzQ"/>
-                            <constraint firstItem="W4T-bo-zek" firstAttribute="top" secondItem="mhY-66-Lcn" secondAttribute="top" constant="27" id="JwB-xU-y9m"/>
+                            <constraint firstItem="W4T-bo-zek" firstAttribute="top" secondItem="mhY-66-Lcn" secondAttribute="top" constant="20" id="JwB-xU-y9m"/>
                             <constraint firstItem="nIZ-9E-KL9" firstAttribute="leading" secondItem="mhY-66-Lcn" secondAttribute="leading" id="QV2-kD-Wsh"/>
                             <constraint firstItem="Sqj-7a-S9k" firstAttribute="centerX" secondItem="mhY-66-Lcn" secondAttribute="centerX" id="ZVv-nX-ezH"/>
                             <constraint firstItem="W4T-bo-zek" firstAttribute="centerX" secondItem="mhY-66-Lcn" secondAttribute="centerX" id="eua-09-T4q"/>

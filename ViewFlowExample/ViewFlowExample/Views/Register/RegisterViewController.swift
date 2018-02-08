@@ -28,6 +28,10 @@ class RegisterViewController: UIViewController, StoryboardViewController, FlowVi
     // MARK: - Actions
 
     @IBAction func registerAction(_ sender: Any) {
-        // step.register(
+        step?.register(username: "username", password: "password", showOptionalView: optionalViewSwitch.isOn)
+    }
+
+    @IBAction func loginAction(_ sender: Any) {
+        step?.navigateToLogin()
     }
 }

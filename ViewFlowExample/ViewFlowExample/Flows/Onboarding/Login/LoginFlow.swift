@@ -9,12 +9,10 @@
 import Foundation
 import GDIViewFlows
 
-// Manages the flow from the login screen to
 class LoginFlow: BaseFlow {
 
-    override var initialStep: FlowStep {
-        return loginStep
-    }
+
+    // MARK: - Flow Steps
 
     private lazy var loginStep: LoginStep = {
         return LoginStep(navigationController: navigationController, delegate: self)
@@ -28,13 +26,17 @@ class LoginFlow: BaseFlow {
 
         return step
     }()
-}
 
 
-extension LoginFlow: FlowStepDelegate {
-    func userNavigated(to destination: NavigationDestination) {
+    // MARK: - Base Flow Overrides
+
+    override var initialStep: FlowStep {
+        return loginStep
+    }
+
+    override func userNavigated(to destination: NavigationDestination) {
         // forward up onboarding navigation to the parent flow
-        guard let loginDestination = destination as? OnboardingFlowNavigation else { return }
+        guard let loginDestination = destination as? OnboardingFlow.Destination else { return }
 
         switch loginDestination {
         case .login, .register, .forgotPassword:
@@ -42,10 +44,7 @@ extension LoginFlow: FlowStepDelegate {
         }
     }
 
-    func stepCancelled(_ step: FlowStep) {
-    }
-
-    func stepCompleted(_ step: FlowStep) {
+    override func stepCompleted(_ step: FlowStep) {
         switch step {
         case is LoginStep:
             appendAndStart(step: postLoginStep)

@@ -20,39 +20,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aW-wl-1EH">
-                                <rect key="frame" x="64" y="217" width="247.5" height="30"/>
+                                <rect key="frame" x="64" y="193" width="247.5" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginAction:" destination="c4w-vf-6Ou" eventType="touchUpInside" id="hg2-Ta-AeW"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="user@email.com" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C84-dk-VsH">
-                                <rect key="frame" x="64" y="108" width="247.5" height="30"/>
+                                <rect key="frame" x="64" y="84" width="247.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-Nh-rAR">
-                                <rect key="frame" x="64" y="159" width="247.5" height="30"/>
+                                <rect key="frame" x="64" y="135" width="247.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ld-xP-WkE">
-                                <rect key="frame" x="132" y="64" width="110" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="130" y="40" width="114.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB5-6S-Dno">
-                                <rect key="frame" x="64" y="271" width="247.5" height="30"/>
+                                <rect key="frame" x="64" y="247" width="247.5" height="30"/>
                                 <state key="normal" title="Create New Account"/>
                                 <connections>
                                     <action selector="createAccountAction:" destination="c4w-vf-6Ou" eventType="touchUpInside" id="nBp-kG-x7u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P65-rw-9ds">
-                                <rect key="frame" x="64" y="329" width="247.5" height="30"/>
+                                <rect key="frame" x="64" y="305" width="247.5" height="30"/>
                                 <state key="normal" title="Forgot Password?"/>
                                 <connections>
                                     <action selector="forgotPasswordAction:" destination="c4w-vf-6Ou" eventType="touchUpInside" id="Mz0-mr-mC9"/>
@@ -68,7 +68,7 @@
                             <constraint firstItem="P65-rw-9ds" firstAttribute="trailing" secondItem="oB5-6S-Dno" secondAttribute="trailing" id="HeC-0E-woG"/>
                             <constraint firstItem="C84-dk-VsH" firstAttribute="width" secondItem="f8u-p3-WP8" secondAttribute="width" multiplier="0.66" id="Tqh-ER-2ne"/>
                             <constraint firstItem="C84-dk-VsH" firstAttribute="top" secondItem="8Ld-xP-WkE" secondAttribute="bottom" constant="23" id="VYy-4a-Cc7"/>
-                            <constraint firstItem="8Ld-xP-WkE" firstAttribute="top" secondItem="wan-GM-QqX" secondAttribute="top" constant="44" id="YLt-DT-3pL"/>
+                            <constraint firstItem="8Ld-xP-WkE" firstAttribute="top" secondItem="wan-GM-QqX" secondAttribute="top" constant="20" id="YLt-DT-3pL"/>
                             <constraint firstItem="oB5-6S-Dno" firstAttribute="trailing" secondItem="3aW-wl-1EH" secondAttribute="trailing" id="Zh8-uD-ty0"/>
                             <constraint firstItem="3aW-wl-1EH" firstAttribute="top" secondItem="8gQ-Nh-rAR" secondAttribute="bottom" constant="28" id="eep-hb-wzc"/>
                             <constraint firstItem="8gQ-Nh-rAR" firstAttribute="top" secondItem="C84-dk-VsH" secondAttribute="bottom" constant="21" id="fCZ-sQ-TJE"/>

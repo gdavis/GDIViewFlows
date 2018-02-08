@@ -36,10 +36,10 @@ extension LoginStep {
     }
 
     func createAccount() {
-        delegate?.userNavigated(to: OnboardingFlowNavigation.register)
+        delegate?.userNavigated(to: OnboardingFlow.Destination.register)
     }
 
     func forgotPassword() {
-        delegate?.userNavigated(to: OnboardingFlowNavigation.forgotPassword)
+        delegate?.userNavigated(to: OnboardingFlow.Destination.forgotPassword)
     }
 }

@@ -9,8 +9,7 @@
 import Foundation
 
 public protocol Flow: FlowStep {
-    var steps: [FlowStep] { get set }
+    var steps: [FlowStep] { get }
     var initialStep: FlowStep { get }
     var currentStep: FlowStep? { get }
-    var stepIndex: Int { get set }
 }

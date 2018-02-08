@@ -29,6 +29,9 @@
 		7771C2C62008647700D57351 /* RegisterView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7771C2C52008647700D57351 /* RegisterView.storyboard */; };
 		7771C2C82008653400D57351 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771C2C72008653400D57351 /* RegisterViewController.swift */; };
 		7771C2CA2008658900D57351 /* RegisterStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771C2C92008658900D57351 /* RegisterStep.swift */; };
+		77F37307202BC3F10099551D /* ForgotPasswordStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F37306202BC3F10099551D /* ForgotPasswordStep.swift */; };
+		77F37309202BC42E0099551D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F37308202BC42E0099551D /* ForgotPasswordViewController.swift */; };
+		77F3730B202BC5130099551D /* ForgotPasswordView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F3730A202BC5130099551D /* ForgotPasswordView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +72,9 @@
 		7771C2C52008647700D57351 /* RegisterView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterView.storyboard; sourceTree = "<group>"; };
 		7771C2C72008653400D57351 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7771C2C92008658900D57351 /* RegisterStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep.swift; sourceTree = "<group>"; };
+		77F37306202BC3F10099551D /* ForgotPasswordStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordStep.swift; sourceTree = "<group>"; };
+		77F37308202BC42E0099551D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		77F3730A202BC5130099551D /* ForgotPasswordView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPasswordView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +92,8 @@
 		772B56BA2029547500AEB8F3 /* Optional Settings */ = {
 			isa = PBXGroup;
 			children = (
-				772B56BB2029548A00AEB8F3 /* OptionalSettingsViewController.swift */,
 				772B56BD202954B800AEB8F3 /* OptionalSettingsView.storyboard */,
+				772B56BB2029548A00AEB8F3 /* OptionalSettingsViewController.swift */,
 			);
 			path = "Optional Settings";
 			sourceTree = "<group>";
@@ -185,6 +191,8 @@
 		7771C28620084A4C00D57351 /* Forgot Password */ = {
 			isa = PBXGroup;
 			children = (
+				77F3730A202BC5130099551D /* ForgotPasswordView.storyboard */,
+				77F37308202BC42E0099551D /* ForgotPasswordViewController.swift */,
 			);
 			path = "Forgot Password";
 			sourceTree = "<group>";
@@ -260,6 +268,7 @@
 				7771C2C3200862E600D57351 /* PostLoginStep.swift */,
 				7771C2C92008658900D57351 /* RegisterStep.swift */,
 				772B56B8202953BA00AEB8F3 /* OptionalSettingsStep.swift */,
+				77F37306202BC3F10099551D /* ForgotPasswordStep.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -328,6 +337,7 @@
 				7771C268200845A900D57351 /* LaunchScreen.storyboard in Resources */,
 				7771C2912008526100D57351 /* LandingView.storyboard in Resources */,
 				772B56BE202954B800AEB8F3 /* OptionalSettingsView.storyboard in Resources */,
+				77F3730B202BC5130099551D /* ForgotPasswordView.storyboard in Resources */,
 				7771C2C62008647700D57351 /* RegisterView.storyboard in Resources */,
 				7771C265200845A900D57351 /* Assets.xcassets in Resources */,
 				7771C2BF20085B9F00D57351 /* LoginView.storyboard in Resources */,
@@ -353,6 +363,8 @@
 				7771C2C220085F6200D57351 /* LoginStep.swift in Sources */,
 				7771C2932008541C00D57351 /* LandingViewController.swift in Sources */,
 				7771C28C20084B2200D57351 /* OnboardingFlow.swift in Sources */,
+				77F37309202BC42E0099551D /* ForgotPasswordViewController.swift in Sources */,
+				77F37307202BC3F10099551D /* ForgotPasswordStep.swift in Sources */,
 				7771C2BB2008595C00D57351 /* UIViewController+Storyboard.swift in Sources */,
 				7771C2B7200858DF00D57351 /* LoginFlow.swift in Sources */,
 			);

@@ -19,9 +19,24 @@ class LandingViewController: UIViewController, StoryboardViewController {
     @IBAction func loginAction(_ sender: Any) {
         guard let navigationController = navigationController else { return }
 
-        let flow = OnboardingFlow(navigationController: navigationController, delegate: nil)
+        let flow = OnboardingFlow(navigationController: navigationController, delegate: self)
         flow.start()
         
         onboardingFlow = flow
+    }
+}
+
+extension LandingViewController: FlowStepDelegate {
+    func userNavigated(to destination: NavigationDestination) {
+    }
+
+    func stepCancelled(_ step: FlowStep) {
+    }
+
+    func stepCompleted(_ step: FlowStep) {
+        // TODO:(grant) navigate to final view
+        navigationController?.popToRootViewController(animated: true)
+
+        onboardingFlow = nil
     }
 }
