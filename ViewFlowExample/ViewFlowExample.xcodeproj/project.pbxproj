@@ -89,11 +89,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771CAA48202BFE31008CCE34 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7771C28520084A4800D57351 /* Register */,
+				7771C28620084A4C00D57351 /* Forgot Password */,
+				7771C2B5200858C000D57351 /* Login */,
+				7771C28B20084B2200D57351 /* OnboardingFlow.swift */,
+				7771C2B6200858DF00D57351 /* LoginFlow.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		771CAA49202BFF06008CCE34 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				7771C28F2008524F00D57351 /* Landing */,
+				771CAA48202BFE31008CCE34 /* Onboarding */,
+				771CAA4B202BFF95008CCE34 /* Mission Planning */,
+				771CAA4C202BFF9E008CCE34 /* Mission Summary */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		771CAA4B202BFF95008CCE34 /* Mission Planning */ = {
+			isa = PBXGroup;
+			children = (
+				771CAA4D202BFFB3008CCE34 /* Choose Role */,
+				771CAA4E202BFFB7008CCE34 /* Choose Spacecraft */,
+				771CAA4F202BFFC4008CCE34 /* Choose Supplies */,
+			);
+			path = "Mission Planning";
+			sourceTree = "<group>";
+		};
+		771CAA4C202BFF9E008CCE34 /* Mission Summary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Mission Summary";
+			sourceTree = "<group>";
+		};
+		771CAA4D202BFFB3008CCE34 /* Choose Role */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Choose Role";
+			sourceTree = "<group>";
+		};
+		771CAA4E202BFFB7008CCE34 /* Choose Spacecraft */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Choose Spacecraft";
+			sourceTree = "<group>";
+		};
+		771CAA4F202BFFC4008CCE34 /* Choose Supplies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Choose Supplies";
+			sourceTree = "<group>";
+		};
 		772B56BA2029547500AEB8F3 /* Optional Settings */ = {
 			isa = PBXGroup;
 			children = (
-				772B56BD202954B800AEB8F3 /* OptionalSettingsView.storyboard */,
+				772B56B8202953BA00AEB8F3 /* OptionalSettingsStep.swift */,
 				772B56BB2029548A00AEB8F3 /* OptionalSettingsViewController.swift */,
+				772B56BD202954B800AEB8F3 /* OptionalSettingsView.storyboard */,
 			);
 			path = "Optional Settings";
 			sourceTree = "<group>";
@@ -119,9 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				7771C2B22008560000D57351 /* AppDelegate.swift */,
-				7771C28220084A3600D57351 /* Flows */,
-				7771C2C020085F3400D57351 /* Steps */,
-				7771C28320084A3A00D57351 /* Views */,
+				771CAA49202BFF06008CCE34 /* Flows */,
 				7771C2B82008594700D57351 /* Utility */,
 				7771C28120084A2D00D57351 /* Supporting Files */,
 			);
@@ -146,44 +206,13 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7771C28220084A3600D57351 /* Flows */ = {
-			isa = PBXGroup;
-			children = (
-				7771C2B4200857B400D57351 /* Complex */,
-				7771C28920084A7400D57351 /* Onboarding */,
-			);
-			path = Flows;
-			sourceTree = "<group>";
-		};
-		7771C28320084A3A00D57351 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7771C28F2008524F00D57351 /* Landing */,
-				7771C28720084A5200D57351 /* Post Login */,
-				7771C28620084A4C00D57351 /* Forgot Password */,
-				7771C28420084A4100D57351 /* Login */,
-				772B56BA2029547500AEB8F3 /* Optional Settings */,
-				7771C28520084A4800D57351 /* Register */,
-				7771C28820084A6400D57351 /* New Feature 1 */,
-				7771C28A20084A8400D57351 /* New Feature 2 */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		7771C28420084A4100D57351 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				7771C2BE20085B9F00D57351 /* LoginView.storyboard */,
-				7771C2BC20085B4200D57351 /* LoginViewController.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		7771C28520084A4800D57351 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				7771C2C52008647700D57351 /* RegisterView.storyboard */,
+				772B56BA2029547500AEB8F3 /* Optional Settings */,
+				7771C2C92008658900D57351 /* RegisterStep.swift */,
 				7771C2C72008653400D57351 /* RegisterViewController.swift */,
+				7771C2C52008647700D57351 /* RegisterView.storyboard */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -191,8 +220,9 @@
 		7771C28620084A4C00D57351 /* Forgot Password */ = {
 			isa = PBXGroup;
 			children = (
-				77F3730A202BC5130099551D /* ForgotPasswordView.storyboard */,
+				77F37306202BC3F10099551D /* ForgotPasswordStep.swift */,
 				77F37308202BC42E0099551D /* ForgotPasswordViewController.swift */,
+				77F3730A202BC5130099551D /* ForgotPasswordView.storyboard */,
 			);
 			path = "Forgot Password";
 			sourceTree = "<group>";
@@ -200,33 +230,11 @@
 		7771C28720084A5200D57351 /* Post Login */ = {
 			isa = PBXGroup;
 			children = (
-				770667FE20295D0500111392 /* PostLoginView.storyboard */,
+				7771C2C3200862E600D57351 /* PostLoginStep.swift */,
 				7706680020295DD200111392 /* PostLoginViewController.swift */,
+				770667FE20295D0500111392 /* PostLoginView.storyboard */,
 			);
 			path = "Post Login";
-			sourceTree = "<group>";
-		};
-		7771C28820084A6400D57351 /* New Feature 1 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Feature 1";
-			sourceTree = "<group>";
-		};
-		7771C28920084A7400D57351 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				7771C2B5200858C000D57351 /* Login */,
-				7771C28B20084B2200D57351 /* OnboardingFlow.swift */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		7771C28A20084A8400D57351 /* New Feature 2 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Feature 2";
 			sourceTree = "<group>";
 		};
 		7771C28F2008524F00D57351 /* Landing */ = {
@@ -238,17 +246,13 @@
 			path = Landing;
 			sourceTree = "<group>";
 		};
-		7771C2B4200857B400D57351 /* Complex */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Complex;
-			sourceTree = "<group>";
-		};
 		7771C2B5200858C000D57351 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				7771C2B6200858DF00D57351 /* LoginFlow.swift */,
+				7771C28720084A5200D57351 /* Post Login */,
+				7771C2C120085F6200D57351 /* LoginStep.swift */,
+				7771C2BC20085B4200D57351 /* LoginViewController.swift */,
+				7771C2BE20085B9F00D57351 /* LoginView.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -259,18 +263,6 @@
 				7771C2BA2008595C00D57351 /* UIViewController+Storyboard.swift */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		7771C2C020085F3400D57351 /* Steps */ = {
-			isa = PBXGroup;
-			children = (
-				7771C2C120085F6200D57351 /* LoginStep.swift */,
-				7771C2C3200862E600D57351 /* PostLoginStep.swift */,
-				7771C2C92008658900D57351 /* RegisterStep.swift */,
-				772B56B8202953BA00AEB8F3 /* OptionalSettingsStep.swift */,
-				77F37306202BC3F10099551D /* ForgotPasswordStep.swift */,
-			);
-			path = Steps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

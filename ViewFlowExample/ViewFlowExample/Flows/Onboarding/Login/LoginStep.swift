@@ -27,12 +27,7 @@ class LoginStep: BaseFlowStep {
 
 extension LoginStep {
     func login(withUsername username: String?, password: String?) {
-
-        // here we spoof a network request and proceed after a short delay
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) { [weak self] in
-            // user would now be logged in, finish this step.
-            self?.finish()
-        }
+        finish()
     }
 
     func createAccount() {
