@@ -26,7 +26,6 @@ class LoginFlow: BaseFlow {
         return step
     }()
 
-
     // MARK: - Base Flow Overrides
 
     override var initialStep: FlowStep {

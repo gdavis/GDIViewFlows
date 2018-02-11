@@ -20,17 +20,31 @@ public enum FlowStepState {
 }
 
 public protocol FlowStep: class {
+    // the navigation controller this step is presented in
     var navigationController: UINavigationController { get set }
+
+    // the view controller associated with displaying this step
     var viewController: UIViewController { get }
 
+    // the current state of the step
     var state: FlowStepState { get set }
+
+    // the object responding to flow state changes
     var delegate: FlowStepDelegate? { get set }
 
+    // determines whether a back button is shown for this step
     var canNavigateBack: Bool { get set }
 
+    // creates a new step instance
     init(navigationController: UINavigationController, delegate: FlowStepDelegate?)
+
+    // called when first displaying the step
     func start()
+
+    // called when popping back to this step
     func resume()
+
+    // called when a user cancelled the activity for the step
     func cancel()
 }
 

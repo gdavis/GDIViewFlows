@@ -20,7 +20,9 @@ class RegisterStep: BaseFlowStep {
     }
 
     lazy var registerViewController: RegisterViewController = {
-        guard let controller: RegisterViewController = try? RegisterViewController.instantiatedFromStoryboard() else { return RegisterViewController() }
+        guard let controller: RegisterViewController = try? RegisterViewController.instantiatedFromStoryboard() else {
+            return RegisterViewController()
+        }
 
         controller.step = self
 
