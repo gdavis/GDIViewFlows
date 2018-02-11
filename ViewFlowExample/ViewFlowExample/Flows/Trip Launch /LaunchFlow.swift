@@ -26,6 +26,8 @@ class LaunchFlow: BaseFlow {
     override func stepCompleted(_ step: FlowStep) {
         switch step {
         case is LaunchPrepStep:
+            takeoffStep.canNavigateBack = false
+
             appendAndStart(step: takeoffStep)
 
         case is TakeoffStep:
