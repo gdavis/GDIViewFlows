@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Register View Controller-->
+        <!--Register Account-->
         <scene sceneID="eNT-mZ-XJa">
             <objects>
-                <viewController id="HbJ-IH-TBO" customClass="RegisterViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register Account" id="HbJ-IH-TBO" customClass="RegisterViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mlr-7l-2uj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mission Summary View Controller-->
+        <!--Trip Planner-->
         <scene sceneID="M6r-3T-Dsa">
             <objects>
-                <tableViewController id="hKd-aR-HZm" customClass="MissionSummaryViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Trip Planner" id="hKd-aR-HZm" customClass="MissionSummaryViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LAk-6H-LKi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4a-1W-bDA">
                                                     <rect key="frame" x="16" y="11" width="343" height="47"/>
-                                                    <state key="normal" title="Take off!"/>
+                                                    <state key="normal" title="Ready!"/>
                                                     <connections>
                                                         <action selector="takeOffAction:" destination="hKd-aR-HZm" eventType="touchUpInside" id="N9V-A7-Kp7"/>
                                                     </connections>

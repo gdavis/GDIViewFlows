@@ -149,8 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				771CAA48202BFE31008CCE34 /* Onboarding */,
-				779409F720310497004F8E54 /* Mars Mission */,
 				779409D42030ECF7004F8E54 /* Orbital Tour */,
+				779409F720310497004F8E54 /* Mars Mission */,
 				771CAA4C202BFF9E008CCE34 /* Trip Launch  */,
 			);
 			path = Flows;

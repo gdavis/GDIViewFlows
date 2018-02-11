@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Select Seat View Controller-->
+        <!--Select Seat-->
         <scene sceneID="98F-Rf-hC9">
             <objects>
-                <tableViewController id="XRF-ey-I1t" customClass="SelectSeatViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Select Seat" id="XRF-ey-I1t" customClass="SelectSeatViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cvz-qb-Y9f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
