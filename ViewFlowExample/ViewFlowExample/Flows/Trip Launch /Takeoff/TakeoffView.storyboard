@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Takeoff View Controller-->
+        <!--Ready for takeoff!-->
         <scene sceneID="ESP-NU-3QS">
             <objects>
-                <viewController id="9rD-Ub-Mdr" customClass="TakeoffViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Ready for takeoff!" id="9rD-Ub-Mdr" customClass="TakeoffViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ep0-4x-U4Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,28 +24,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmC-W7-IXp">
-                                <rect key="frame" x="121" y="253" width="132" height="61"/>
-                                <string key="text">Ready for Liftoff!
-
-Have a great trip!</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have a great trip!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmC-W7-IXp">
+                                <rect key="frame" x="121" y="253" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syt-Mo-haw">
-                                <rect key="frame" x="159" y="358" width="56" height="30"/>
+                                <rect key="frame" x="159" y="318" width="56" height="30"/>
                                 <state key="normal" title="Takeoff!"/>
                                 <connections>
                                     <action selector="takeoffAction:" destination="9rD-Ub-Mdr" eventType="touchUpInside" id="0Vz-Bn-lyk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Im-3f-Zv3">
+                                <rect key="frame" x="80" y="5" width="174" height="191"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="160"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mmC-W7-IXp" firstAttribute="top" secondItem="aEa-Uc-gyE" secondAttribute="bottom" constant="42" id="0RB-LO-u5B"/>
                             <constraint firstItem="syt-Mo-haw" firstAttribute="centerX" secondItem="mmC-W7-IXp" secondAttribute="centerX" id="5bE-Ao-Sx0"/>
+                            <constraint firstItem="1Im-3f-Zv3" firstAttribute="centerY" secondItem="aEa-Uc-gyE" secondAttribute="centerY" constant="-15" id="MQD-2a-bwo"/>
                             <constraint firstItem="aEa-Uc-gyE" firstAttribute="top" secondItem="rAV-2z-Unn" secondAttribute="top" id="O2q-cg-fUL"/>
+                            <constraint firstItem="1Im-3f-Zv3" firstAttribute="centerX" secondItem="aEa-Uc-gyE" secondAttribute="centerX" constant="-20" id="a4n-oZ-Nj6"/>
                             <constraint firstItem="mmC-W7-IXp" firstAttribute="centerX" secondItem="aEa-Uc-gyE" secondAttribute="centerX" id="adm-BX-jHp"/>
                             <constraint firstItem="aEa-Uc-gyE" firstAttribute="centerX" secondItem="rAV-2z-Unn" secondAttribute="centerX" id="kvP-8Z-XYo"/>
                             <constraint firstItem="syt-Mo-haw" firstAttribute="top" secondItem="mmC-W7-IXp" secondAttribute="bottom" constant="44" id="yD5-48-VlA"/>
