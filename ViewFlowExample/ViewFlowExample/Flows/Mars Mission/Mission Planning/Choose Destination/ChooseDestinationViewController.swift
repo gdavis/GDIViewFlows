@@ -38,27 +38,27 @@ class ChooseDestinationViewController: UITableViewController, StoryboardViewCont
     var step: ChooseDestinationStep?
 
     enum MissionDestination: Int {
-        case mars
-        case jupiter
-        case saturn
-        case kronos
-        case alphaCentauri
-        case tatooine
+        case acidalia
+        case tempeTerra
+        case lunaePlanum
+        case terraSabaea
+        case isidisPlanitia
+        case tharsis
 
         var name: String {
             switch self {
-            case .mars:
-                return "Mars"
-            case .jupiter:
-                return "Jupiter"
-            case .saturn:
-                return "Saturn"
-            case .kronos:
-                return "Kronos"
-            case .alphaCentauri:
-                return "Alpha Centauri"
-            case .tatooine:
-                return "Tatooine"
+            case .acidalia:
+                return "Acidalia Planitia"
+            case .tempeTerra:
+                return "Tempe Terra"
+            case .lunaePlanum:
+                return "Lunae Planum"
+            case .terraSabaea:
+                return "Terra Sabaea"
+            case .isidisPlanitia:
+                return "Isidis Planitia"
+            case .tharsis:
+                return "Tharsis Volcanic Region"
             }
         }
     }
