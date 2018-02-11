@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-753" y="159"/>
         </scene>
-        <!--SpaceX Flight App 2054-->
+        <!--SpaceX Trip Planner-->
         <scene sceneID="Mbr-Gm-1x9">
             <objects>
                 <viewController id="bEM-ec-Jue" customClass="LandingViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,7 +95,7 @@ In this demo we'll plan a space voyage using SpaceX commerical services in 2054!
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y0I-H1-r8I"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SpaceX Flight App 2054" id="ZqT-to-dbN"/>
+                    <navigationItem key="navigationItem" title="SpaceX Trip Planner" id="ZqT-to-dbN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPT-Ft-TbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

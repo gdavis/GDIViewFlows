@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Post Login View Controller-->
+        <!--Welcome Back!-->
         <scene sceneID="vEX-Hb-KrG">
             <objects>
-                <viewController id="ix1-Qw-oLq" customClass="PostLoginViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome Back!" id="ix1-Qw-oLq" customClass="PostLoginViewController" customModule="ViewFlowExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ZX-c9-Ejt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,8 +31,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqj-7a-S9k">
-                                <rect key="frame" x="151" y="201" width="74" height="30"/>
-                                <state key="normal" title="Sure, next!"/>
+                                <rect key="frame" x="148" y="201" width="80" height="30"/>
+                                <state key="normal" title="Great, next!"/>
                                 <connections>
                                     <action selector="nextAction:" destination="ix1-Qw-oLq" eventType="touchUpInside" id="h8U-K4-NMc"/>
                                 </connections>
