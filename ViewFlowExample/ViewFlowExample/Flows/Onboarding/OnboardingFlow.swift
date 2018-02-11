@@ -24,7 +24,7 @@ class OnboardingFlow: BaseFlow {
     }()
 
     
-    // MARK: - FlowStepDelegate Overrides
+    // MARK: - BaseFlow Overrides
 
     override var initialStep: FlowStep {
         return loginStep
@@ -73,7 +73,7 @@ class OnboardingFlow: BaseFlow {
             finish()
 
         default:
-            break
+            assertionFailure("Completed step not handled")
         }
     }
 }

@@ -46,7 +46,7 @@ class LoginFlow: BaseFlow {
             finish()
 
         default:
-            assertionFailure("Unexpeted step completed")
+            assertionFailure("Completed step not handled")
         }
     }
 }

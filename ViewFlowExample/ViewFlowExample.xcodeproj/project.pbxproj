@@ -13,7 +13,7 @@
 		771CAA54202C0633008CCE34 /* MissionSummaryView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771CAA53202C0633008CCE34 /* MissionSummaryView.storyboard */; };
 		771CAA56202C07AE008CCE34 /* MissionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA55202C07AE008CCE34 /* MissionSummaryViewController.swift */; };
 		771CAA58202C07C2008CCE34 /* MissionSummaryStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA57202C07C2008CCE34 /* MissionSummaryStep.swift */; };
-		771CAA5C202C0AD1008CCE34 /* MissionFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA5B202C0AD1008CCE34 /* MissionFlow.swift */; };
+		771CAA5C202C0AD1008CCE34 /* MarsMissionFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA5B202C0AD1008CCE34 /* MarsMissionFlow.swift */; };
 		771CAA5E202C3FA0008CCE34 /* ChooseRoleView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771CAA5D202C3FA0008CCE34 /* ChooseRoleView.storyboard */; };
 		771CAA60202C40EE008CCE34 /* ChooseRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA5F202C40EE008CCE34 /* ChooseRoleViewController.swift */; };
 		771CAA62202C43F0008CCE34 /* ChooseSpacecraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CAA61202C43F0008CCE34 /* ChooseSpacecraftViewController.swift */; };
@@ -40,6 +40,17 @@
 		7771C2C62008647700D57351 /* RegisterView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7771C2C52008647700D57351 /* RegisterView.storyboard */; };
 		7771C2C82008653400D57351 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771C2C72008653400D57351 /* RegisterViewController.swift */; };
 		7771C2CA2008658900D57351 /* RegisterStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771C2C92008658900D57351 /* RegisterStep.swift */; };
+		779409D72030F71B004F8E54 /* TourOptionsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779409D62030F71B004F8E54 /* TourOptionsFlow.swift */; };
+		779409DB2030F807004F8E54 /* SelectSeatsStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779409DA2030F807004F8E54 /* SelectSeatsStep.swift */; };
+		779409E32030F99B004F8E54 /* SelectBeverageStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779409E22030F99B004F8E54 /* SelectBeverageStep.swift */; };
+		779409E52030F9A7004F8E54 /* SelectBeverageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779409E42030F9A7004F8E54 /* SelectBeverageView.storyboard */; };
+		779409E82030FC87004F8E54 /* OrbitalTourFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779409E72030FC87004F8E54 /* OrbitalTourFlow.swift */; };
+		779409EA2030FDAE004F8E54 /* LaunchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779409E92030FDAE004F8E54 /* LaunchFlow.swift */; };
+		779409EE2030FE63004F8E54 /* TakeoffView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779409ED2030FE63004F8E54 /* TakeoffView.storyboard */; };
+		779409F02030FEEC004F8E54 /* TakeoffStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779409EF2030FEEC004F8E54 /* TakeoffStep.swift */; };
+		779409F22030FF2E004F8E54 /* SelectSeatView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779409F12030FF2E004F8E54 /* SelectSeatView.storyboard */; };
+		779409F42030FFB1004F8E54 /* LaunchPrepView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779409F32030FFB1004F8E54 /* LaunchPrepView.storyboard */; };
+		779409F62030FFC6004F8E54 /* LaunchPrepStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779409F52030FFC6004F8E54 /* LaunchPrepStep.swift */; };
 		77F37307202BC3F10099551D /* ForgotPasswordStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F37306202BC3F10099551D /* ForgotPasswordStep.swift */; };
 		77F37309202BC42E0099551D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F37308202BC42E0099551D /* ForgotPasswordViewController.swift */; };
 		77F3730B202BC5130099551D /* ForgotPasswordView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F3730A202BC5130099551D /* ForgotPasswordView.storyboard */; };
@@ -66,7 +77,7 @@
 		771CAA53202C0633008CCE34 /* MissionSummaryView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MissionSummaryView.storyboard; sourceTree = "<group>"; };
 		771CAA55202C07AE008CCE34 /* MissionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSummaryViewController.swift; sourceTree = "<group>"; };
 		771CAA57202C07C2008CCE34 /* MissionSummaryStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSummaryStep.swift; sourceTree = "<group>"; };
-		771CAA5B202C0AD1008CCE34 /* MissionFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionFlow.swift; sourceTree = "<group>"; };
+		771CAA5B202C0AD1008CCE34 /* MarsMissionFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsMissionFlow.swift; sourceTree = "<group>"; };
 		771CAA5D202C3FA0008CCE34 /* ChooseRoleView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseRoleView.storyboard; sourceTree = "<group>"; };
 		771CAA5F202C40EE008CCE34 /* ChooseRoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRoleViewController.swift; sourceTree = "<group>"; };
 		771CAA61202C43F0008CCE34 /* ChooseSpacecraftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSpacecraftViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +105,17 @@
 		7771C2C52008647700D57351 /* RegisterView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterView.storyboard; sourceTree = "<group>"; };
 		7771C2C72008653400D57351 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7771C2C92008658900D57351 /* RegisterStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStep.swift; sourceTree = "<group>"; };
+		779409D62030F71B004F8E54 /* TourOptionsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourOptionsFlow.swift; sourceTree = "<group>"; };
+		779409DA2030F807004F8E54 /* SelectSeatsStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatsStep.swift; sourceTree = "<group>"; };
+		779409E22030F99B004F8E54 /* SelectBeverageStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBeverageStep.swift; sourceTree = "<group>"; };
+		779409E42030F9A7004F8E54 /* SelectBeverageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectBeverageView.storyboard; sourceTree = "<group>"; };
+		779409E72030FC87004F8E54 /* OrbitalTourFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitalTourFlow.swift; sourceTree = "<group>"; };
+		779409E92030FDAE004F8E54 /* LaunchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlow.swift; sourceTree = "<group>"; };
+		779409ED2030FE63004F8E54 /* TakeoffView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakeoffView.storyboard; sourceTree = "<group>"; };
+		779409EF2030FEEC004F8E54 /* TakeoffStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeoffStep.swift; sourceTree = "<group>"; };
+		779409F12030FF2E004F8E54 /* SelectSeatView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectSeatView.storyboard; sourceTree = "<group>"; };
+		779409F32030FFB1004F8E54 /* LaunchPrepView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchPrepView.storyboard; sourceTree = "<group>"; };
+		779409F52030FFC6004F8E54 /* LaunchPrepStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPrepStep.swift; sourceTree = "<group>"; };
 		77F37306202BC3F10099551D /* ForgotPasswordStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordStep.swift; sourceTree = "<group>"; };
 		77F37308202BC42E0099551D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		77F3730A202BC5130099551D /* ForgotPasswordView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPasswordView.storyboard; sourceTree = "<group>"; };
@@ -127,9 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				771CAA48202BFE31008CCE34 /* Onboarding */,
-				771CAA4B202BFF95008CCE34 /* Mission Planning */,
-				771CAA4C202BFF9E008CCE34 /* Mission Launch */,
-				771CAA5B202C0AD1008CCE34 /* MissionFlow.swift */,
+				779409F720310497004F8E54 /* Mars Mission */,
+				779409D42030ECF7004F8E54 /* Orbital Tour */,
+				771CAA4C202BFF9E008CCE34 /* Trip Launch  */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -146,11 +168,14 @@
 			path = "Mission Planning";
 			sourceTree = "<group>";
 		};
-		771CAA4C202BFF9E008CCE34 /* Mission Launch */ = {
+		771CAA4C202BFF9E008CCE34 /* Trip Launch  */ = {
 			isa = PBXGroup;
 			children = (
+				779409EC2030FE58004F8E54 /* Takeoff */,
+				779409EB2030FE41004F8E54 /* Launch Prep List */,
+				779409E92030FDAE004F8E54 /* LaunchFlow.swift */,
 			);
-			path = "Mission Launch";
+			path = "Trip Launch ";
 			sourceTree = "<group>";
 		};
 		771CAA4D202BFFB3008CCE34 /* Choose Role */ = {
@@ -298,6 +323,70 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		779409D42030ECF7004F8E54 /* Orbital Tour */ = {
+			isa = PBXGroup;
+			children = (
+				779409E62030FC67004F8E54 /* Tour Options */,
+				779409E72030FC87004F8E54 /* OrbitalTourFlow.swift */,
+			);
+			path = "Orbital Tour";
+			sourceTree = "<group>";
+		};
+		779409DE2030F895004F8E54 /* Select Seat */ = {
+			isa = PBXGroup;
+			children = (
+				779409DA2030F807004F8E54 /* SelectSeatsStep.swift */,
+				779409F12030FF2E004F8E54 /* SelectSeatView.storyboard */,
+			);
+			path = "Select Seat";
+			sourceTree = "<group>";
+		};
+		779409E12030F987004F8E54 /* Select Beverage */ = {
+			isa = PBXGroup;
+			children = (
+				779409E22030F99B004F8E54 /* SelectBeverageStep.swift */,
+				779409E42030F9A7004F8E54 /* SelectBeverageView.storyboard */,
+			);
+			path = "Select Beverage";
+			sourceTree = "<group>";
+		};
+		779409E62030FC67004F8E54 /* Tour Options */ = {
+			isa = PBXGroup;
+			children = (
+				779409E12030F987004F8E54 /* Select Beverage */,
+				779409DE2030F895004F8E54 /* Select Seat */,
+				779409D62030F71B004F8E54 /* TourOptionsFlow.swift */,
+			);
+			path = "Tour Options";
+			sourceTree = "<group>";
+		};
+		779409EB2030FE41004F8E54 /* Launch Prep List */ = {
+			isa = PBXGroup;
+			children = (
+				779409F52030FFC6004F8E54 /* LaunchPrepStep.swift */,
+				779409F32030FFB1004F8E54 /* LaunchPrepView.storyboard */,
+			);
+			path = "Launch Prep List";
+			sourceTree = "<group>";
+		};
+		779409EC2030FE58004F8E54 /* Takeoff */ = {
+			isa = PBXGroup;
+			children = (
+				779409EF2030FEEC004F8E54 /* TakeoffStep.swift */,
+				779409ED2030FE63004F8E54 /* TakeoffView.storyboard */,
+			);
+			path = Takeoff;
+			sourceTree = "<group>";
+		};
+		779409F720310497004F8E54 /* Mars Mission */ = {
+			isa = PBXGroup;
+			children = (
+				771CAA4B202BFF95008CCE34 /* Mission Planning */,
+				771CAA5B202C0AD1008CCE34 /* MarsMissionFlow.swift */,
+			);
+			path = "Mars Mission";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -362,13 +451,17 @@
 				7771C268200845A900D57351 /* LaunchScreen.storyboard in Resources */,
 				7771C2912008526100D57351 /* LandingView.storyboard in Resources */,
 				771CAA54202C0633008CCE34 /* MissionSummaryView.storyboard in Resources */,
+				779409E52030F9A7004F8E54 /* SelectBeverageView.storyboard in Resources */,
 				772B56BE202954B800AEB8F3 /* RegisterSurveyView.storyboard in Resources */,
 				77F3730B202BC5130099551D /* ForgotPasswordView.storyboard in Resources */,
 				7771C2C62008647700D57351 /* RegisterView.storyboard in Resources */,
 				771CAA5E202C3FA0008CCE34 /* ChooseRoleView.storyboard in Resources */,
+				779409F22030FF2E004F8E54 /* SelectSeatView.storyboard in Resources */,
 				7771C265200845A900D57351 /* Assets.xcassets in Resources */,
+				779409EE2030FE63004F8E54 /* TakeoffView.storyboard in Resources */,
 				7771C2BF20085B9F00D57351 /* LoginView.storyboard in Resources */,
 				770667FF20295D0500111392 /* PostLoginView.storyboard in Resources */,
+				779409F42030FFB1004F8E54 /* LaunchPrepView.storyboard in Resources */,
 				771CAA69202C48BB008CCE34 /* ChooseDestinationView.storyboard in Resources */,
 				771CAA64202C4476008CCE34 /* ChooseSpacecraftView.storyboard in Resources */,
 			);
@@ -385,24 +478,31 @@
 				772B56BC2029548A00AEB8F3 /* RegisterSurveyViewController.swift in Sources */,
 				7771C2BD20085B4200D57351 /* LoginViewController.swift in Sources */,
 				771CAA60202C40EE008CCE34 /* ChooseRoleViewController.swift in Sources */,
+				779409E82030FC87004F8E54 /* OrbitalTourFlow.swift in Sources */,
+				779409DB2030F807004F8E54 /* SelectSeatsStep.swift in Sources */,
 				7771C2B32008560000D57351 /* AppDelegate.swift in Sources */,
 				772B56B9202953BA00AEB8F3 /* RegisterSurveyStep.swift in Sources */,
 				771CAA51202C0584008CCE34 /* MissionPlanningFlow.swift in Sources */,
-				771CAA5C202C0AD1008CCE34 /* MissionFlow.swift in Sources */,
+				771CAA5C202C0AD1008CCE34 /* MarsMissionFlow.swift in Sources */,
 				7771C2C4200862E600D57351 /* PostLoginStep.swift in Sources */,
 				7771C2CA2008658900D57351 /* RegisterStep.swift in Sources */,
 				7706680120295DD200111392 /* PostLoginViewController.swift in Sources */,
 				7771C2C220085F6200D57351 /* LoginStep.swift in Sources */,
 				771CAA67202C4804008CCE34 /* ChooseDestinationViewController.swift in Sources */,
+				779409EA2030FDAE004F8E54 /* LaunchFlow.swift in Sources */,
+				779409F02030FEEC004F8E54 /* TakeoffStep.swift in Sources */,
 				7771C2932008541C00D57351 /* LandingViewController.swift in Sources */,
+				779409E32030F99B004F8E54 /* SelectBeverageStep.swift in Sources */,
 				7771C28C20084B2200D57351 /* OnboardingFlow.swift in Sources */,
 				771CAA56202C07AE008CCE34 /* MissionSummaryViewController.swift in Sources */,
+				779409F62030FFC6004F8E54 /* LaunchPrepStep.swift in Sources */,
 				771CAA58202C07C2008CCE34 /* MissionSummaryStep.swift in Sources */,
 				771CAA62202C43F0008CCE34 /* ChooseSpacecraftViewController.swift in Sources */,
 				77F37309202BC42E0099551D /* ForgotPasswordViewController.swift in Sources */,
 				77F37307202BC3F10099551D /* ForgotPasswordStep.swift in Sources */,
 				7771C2BB2008595C00D57351 /* UIViewController+Storyboard.swift in Sources */,
 				7771C2B7200858DF00D57351 /* LoginFlow.swift in Sources */,
+				779409D72030F71B004F8E54 /* TourOptionsFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
