@@ -38,18 +38,18 @@ class ChooseRoleViewController: UITableViewController, StoryboardViewController,
     var step: ChooseRoleStep?
 
     enum Role: Int {
-        case captain, engineer, translator, doctor
+        case cook, engineer, maintenance, doctor
 
         var name: String {
             switch self {
-            case .captain:
-                return "The Captain"
+            case .cook:
+                return "Cook"
             case .engineer:
-                return "The Engineer"
-            case .translator:
-                return "The Translator"
+                return "Engineer"
+            case .maintenance:
+                return "Maintenance"
             case .doctor:
-                return "The Doctor"
+                return "Doctor"
             }
         }
     }
