@@ -171,8 +171,8 @@
 		771CAA4C202BFF9E008CCE34 /* Trip Launch  */ = {
 			isa = PBXGroup;
 			children = (
-				779409EC2030FE58004F8E54 /* Takeoff */,
 				779409EB2030FE41004F8E54 /* Launch Prep List */,
+				779409EC2030FE58004F8E54 /* Takeoff */,
 				779409E92030FDAE004F8E54 /* LaunchFlow.swift */,
 			);
 			path = "Trip Launch ";
