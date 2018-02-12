@@ -53,7 +53,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efi-Sv-1pY">
                                         <rect key="frame" x="0.0" y="88" width="162" height="30"/>
-                                        <state key="normal" title="Take my ass to Mars!"/>
+                                        <state key="normal" title="Take a trip to Mars"/>
                                         <connections>
                                             <action selector="marsEmmigrationAction:" destination="bEM-ec-Jue" eventType="touchUpInside" id="Qgp-RA-8kU"/>
                                         </connections>

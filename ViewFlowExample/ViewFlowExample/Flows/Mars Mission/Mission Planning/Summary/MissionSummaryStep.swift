@@ -48,4 +48,10 @@ class MissionSummaryStep: BaseFlowStep {
     func chooseOption(_ option: MissionOption) {
         delegate?.userNavigated(to: option)
     }
+
+    func ready() {
+        guard selectedRole != nil, selectedShip != nil, selectedDestination != nil else { return }
+
+        finish()
+    }
 }
