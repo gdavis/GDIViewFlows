@@ -38,7 +38,7 @@ class ChooseSpacecraftViewController: UITableViewController, StoryboardViewContr
     var step: ChooseSpacecraftStep?
 
     enum Spacecraft: Int {
-        case falconHeavy, enterprise, milleniumFalcon, battlestarGalactica
+        case falconHeavy, milleniumFalcon, enterprise, battlestarGalactica
 
         var name: String {
             switch self {
